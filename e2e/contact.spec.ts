@@ -23,13 +23,13 @@ test.describe('Header area', () => {
         // Start from the index page (the baseURL is set via the webServer in the playwright.config.ts)
         await page.goto(urlContact)
         
-        const metaDescriptionOne = page.locator('meta[name="author"]')
+        const metaDescriptionOne = page.locator('meta[name="tyler"]')
         await expect(metaDescriptionOne).toHaveAttribute("content", "MDIA 2109")
 
-        const metaDescriptionTwo = page.locator('meta[property="og:title"]');
+        const metaDescriptionTwo = page.locator('meta[property="title"]');
         await expect(metaDescriptionTwo).toHaveAttribute('content', 'Assignment #1 - Contact Us Page')
 
-        const metaDescriptionThree = page.locator('meta[property="og:description"]');
+        const metaDescriptionThree = page.locator('meta[property="description"]');
         await expect(metaDescriptionThree).toHaveAttribute('content', 'BCIT Digital Design and Development Diploma')
     })
 
