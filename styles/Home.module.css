@@ -5,6 +5,10 @@
   align-items: center;
   padding: 6rem;
   min-height: 100vh;
+  background-image:url('../public/background-images/backgroundMountain.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
 }
 
 .description {
