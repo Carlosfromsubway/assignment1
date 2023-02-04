@@ -1,6 +1,6 @@
 import Head from "next/head"
 import styles from '../styles/Home.module.css'
-
+import { Inter } from '@next/font/google'
 export default function About() {
     return (
         <>
@@ -13,21 +13,24 @@ export default function About() {
       </Head>
   <div className={styles.aboutbackground}> 
     <div className={styles.containerabout}>
-        <h1> About us</h1>
-        <h1></h1>
-        <p></p>
-        <p></p>
-        <p></p>
-        <p></p>
-        <p></p>
-        <p></p>
-        <p></p>
-        <h2></h2>
-        <h2></h2>
-        <h3></h3>
+        <h1> About us</h1> 
+        
+        <p>We are proud to deliver an education that goes beyond textbooks and classrooms</p>
+        <p>Our students gain the technical skills, real-world experience, and problem-solving ability needed to embrace complexity and lead innovation in a rapidly changing workforce.</p>
+        <p> Through close collaboration with industry, our nextwork of alumini and partners continue to achieve global success.</p>
+        <h2>Infomational Sessions</h2>
+        <p>Information sessions are a simple way to figure our the next step along your career path. Learn more about the programs that interest you</p>
+        <h3>Big Info</h3>
+        <p>Big Info is the largest program expo and Information session at BCIT. It's your chance to find out about all our programs - from a business, computing. and health to engineering, trades and aplied sciences.</p>
+        <p>If you missed our fall event the next Big Info is schduled to return on February 15, 2023</p>
+        
+        
+        <h2>Campus tours</h2>
+        <p>Tours run weekdays September to May, on our Burnaby campus. See BCIT in person and get a taste of campus life.</p>
+        
 
     </div>
-
+    <h1>Departments</h1>
     <ul>
         <li>Applied & Natural Sciences</li>
         <li>Business & Media</li>
