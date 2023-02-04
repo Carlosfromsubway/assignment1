@@ -1,6 +1,6 @@
 import Head from "next/head"
-
-
+import styles from '../styles/Home.module.css'
+import Image from "next/image"
 export default function Contact() {
     return (
         <>
@@ -11,24 +11,38 @@ export default function Contact() {
         <meta property="description" content='BCIT Digital Design and Development Diploma' />
         <link rel="icon" href='/favicon.png' />
       </Head>
+      <main className={styles.contactbg}> 
       <div>
             <title>Contact Us</title>
-            <h1>Contact Us</h1>
-            <p></p>
+            <h1 className={styles.header}>Contact Us</h1>
+            <p>Want to discuss? Lets chat!</p>
         </div>
 
-            <div>
+            <div className={styles.formcont}>
 
                 <form>
-                    <fieldset>
+                    <fieldset className={styles.box}>
                         <table>
 
                             <thead>
+                            <input
+                            className={styles.inputcont}
+                             type="text"
 
+                             placeholder="First Name Here" />
+                            <input
+                            className={styles.inputcont}
+                             type="text"
+
+                             placeholder="Email Here" />
                                 <tr></tr>
                             </thead>
                             <thead>
+                            <input
+                            className={styles.inputcont}
+                             type="text"
 
+                             placeholder="Last Name Here" />
                                 <tr></tr>
                             </thead>
                         </table>
@@ -39,10 +53,10 @@ export default function Contact() {
             </div>
             <a> 
           <span> 
-            <img></img>
+            <img src="../icons/upwardArrow.png"></img>
           </span>
         </a>
-
+        </main>
         </>
     )
 }
