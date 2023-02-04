@@ -16,21 +16,31 @@ export default function Home() {
         <link rel="icon" href='/favicon.png' />
       </Head>
       <main className={styles.main}>
-        <h1>"An investment in knowledge pays the best interest.</h1>
+      <a> 
+          <span> 
+            <img className={styles.gradhat} src="'../public/background-images/backgroundMountain.jpg'"></img>
+          </span>
+        </a>
+        <a> 
+          <span> 
+            <img className={styles.gradhat} src="'../public/background-images/backgroundMountain.jpg'"></img>
+          </span>
+        </a>
+        <div className={styles.containerindex}> 
+        <h1 className={styles.header}>An investment in knowledge pays the best interest.</h1>
 
-        <p>Different than a college or university, the British Columbia Institute of Technology offers practical, flexible, applied education with instructors who have direct, hands-on experience in their field.
+        <hr className={styles.line}></hr>
+
+        <p >Different than a college or university, the British Columbia Institute of Technology offers practical, flexible, applied education with instructors who have direct, hands-on experience in their field.
         </p>
 
         <a> 
-        <button name="More About Us">More About Us</button>
-        <button name="Contact Us">Contact Us</button>
+        <button name="More About Us" className={styles.linkbutton}>More About Us</button>
+        <button name="Contact Us" className={styles.linkbutton}>Contact Us</button>
         </a>
 
-        <a> 
-          <span> 
-            <img></img>
-          </span>
-        </a>
+
+        </div>
 
       </main>
     </>

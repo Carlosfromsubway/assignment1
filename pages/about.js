@@ -1,5 +1,5 @@
 import Head from "next/head"
-
+import styles from '../styles/Home.module.css'
 
 export default function About() {
     return (
@@ -11,8 +11,9 @@ export default function About() {
         <meta property="description" content='BCIT Digital Design and Development Diploma' />
         <link rel="icon" href='/favicon.png' />
       </Head>
-    <div>
-        <h1></h1>
+  <div className={styles.aboutbackground}> 
+    <div className={styles.containerabout}>
+        <h1> About us</h1>
         <h1></h1>
         <p></p>
         <p></p>
@@ -45,4 +46,5 @@ export default function About() {
             <img></img>
           </span>
         </a>
+    </div>
       </>)}

@@ -7,9 +7,60 @@
   min-height: 100vh;
   background-image:url('../public/background-images/backgroundMountain.jpg');
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  
   background-position: center;
 }
+/*Index page styling*/
+.linkbutton {
+  border-radius: 10px;
+  border-color: white;
+  background-color: transparent;
+  width: 120px;
+  height:35px;
+  margin: 10px;
+}
+
+.header {
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.containerindex {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  max-width: 20%;
+  margin: 10%;
+  margin-left: -300px;
+  line-height: 50px;
+  margin-top: 400px;
+}
+
+.gradhat {
+  width: 200px;
+}
+
+.line {
+  border: 2px solid rgb(253, 218, 81);
+  border-radius: 1px;
+}
+
+/* about page styling */
+
+.aboutbackground {
+  background-color: rgba(16, 46, 53, 0.5);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+.containerabout {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
 
 .description {
   display: inherit;
