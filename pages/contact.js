@@ -34,7 +34,7 @@ export default function Contact() {
                             className={styles.inputcont}
                              type="text"
 
-                             placeholder="Email Here" />
+                             placeholder="Last Name Here" />
                                 <tr></tr>
                             </thead>
                             <thead>
@@ -42,7 +42,7 @@ export default function Contact() {
                             className={styles.inputcont}
                              type="text"
 
-                             placeholder="Last Name Here" />
+                             placeholder="Email Name Here" />
                                 <tr></tr>
                             </thead>
                         </table>
@@ -51,7 +51,7 @@ export default function Contact() {
 
                 </form>
             </div>
-            <a> 
+            <a href="/about"> 
           <span> 
             <img src="../icons/upwardArrow.png"></img>
           </span>

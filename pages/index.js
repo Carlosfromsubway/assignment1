@@ -41,7 +41,11 @@ export default function Home() {
 
 
         </div>
-
+        <a href="/about"> 
+          <span> 
+            <img src="downwardArrow.png"></img>
+          </span>
+        </a>
       </main>
     </>
   )

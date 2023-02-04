@@ -52,16 +52,20 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  
+  align-items: center;
+  padding: 10px;
 }
 
+.aboutp {
+  font-size: 20px;
+}
 
 .containerabout {
   justify-content: center;
   display: flex;
   flex-direction: column;
   max-width: 30%;
-  align-items: center;
+  
 }
 
 /* Contact styling*/
