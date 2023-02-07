@@ -1,7 +1,19 @@
 import Head from "next/head"
 import styles from '../styles/Home.module.css'
 import { Inter } from '@next/font/google'
+import Image from "next/image"
+
 export default function About() {
+
+
+const images = [
+"/carousel-images/carousel-images/5.jpg",
+"/carousel-images/carousel-images/4.jpg",
+"/carousel-images/carousel-images/3.jpg",
+"/carousel-images/carousel-images/2.jpg",
+"/carousel-images/carousel-images/1.jpg",
+"/carousel-images/carousel-images/0.jpg"];
+
     return (
         <>
         <Head>
@@ -13,6 +25,7 @@ export default function About() {
       </Head>
   <div className={styles.aboutbackground}> 
     <div className={styles.containerabout}>
+    <Image src={"/icons/menu-icon.png"} width={30} height={30} className={styles.Menu}/>
         <h1 className={styles.header}> About us</h1> 
         
         <p className={styles.aboutp}>We are proud to deliver an education that goes beyond textbooks and classrooms</p>
@@ -39,6 +52,13 @@ export default function About() {
         <li>Health Sciences</li>
         <li>Trades & Apprenticeships</li>
     </ul>
+    <div> 
+   {images.map((each,index) => (
+    <div key={index}> 
+      <Image src={each} width={200} height={300}/>
+      </div>
+   ))}
+   </div>
     <a href="/"> 
           <span> 
             <img src="/icons/upwardArrow.png"></img>

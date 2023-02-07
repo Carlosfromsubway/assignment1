@@ -17,6 +17,7 @@
     #0071ff33 160deg,
     transparent 360deg
   );
+  
   --secondary-glow: radial-gradient(
     rgba(255, 255, 255, 1),
     rgba(255, 255, 255, 0)
@@ -104,4 +105,9 @@ a {
   html {
     color-scheme: dark;
   }
+}
+
+.imgs{
+  width: 350px;
+  height: 350px;
 }

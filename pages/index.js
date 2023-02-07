@@ -2,11 +2,11 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from '../styles/Home.module.css'
-import { useState } from 'react'
+import React, { useState } from 'react';
 
 const inter = Inter({ subsets: ['latin'] })
 
-
+const [hammenu, setHammenu] = useState(false);
 export default function Home() {
   return (
     <>
@@ -20,9 +20,20 @@ export default function Home() {
       <main className={styles.main}>
       <a> 
           <span> 
-          <Image src={"/icons/menu-icon.png"} width={30} height={30} className={styles.Menu}/>
+          <Image src={"/icons/menu-icon.png"} width={30} height={30} className={styles.Menu} onClick = {() => {
+            setHammenu(!hamburger);
+            }}/>
           </span>
         </a>
+        {hammenu && (
+          <ul>
+            <a href='/'> 
+            <li>Home</li>
+            </a>
+            <li>About</li>
+            <li>Contact</li>
+          </ul>
+          )}
         <a> 
           <span> 
             <Image src={"/icons/graduation-hat.png"} width={5} height={120} className={styles.gradhat}/> 
