@@ -6,7 +6,7 @@ import React, { useState } from 'react';
 
 const inter = Inter({ subsets: ['latin'] })
 
-const [hammenu, setHammenu] = useState(false);
+
 export default function Home() {
   return (
     <>
@@ -18,27 +18,14 @@ export default function Home() {
         <link rel="icon" href='/favicon.png' />
       </Head>
       <main className={styles.main}>
-      <a> 
-          <span> 
-          <Image src={"/icons/menu-icon.png"} width={30} height={30} className={styles.Menu} onClick = {() => {
-            setHammenu(!hamburger);
-            }}/>
-          </span>
-        </a>
-        {hammenu && (
-          <ul>
-            <a href='/'> 
-            <li>Home</li>
-            </a>
-            <li>About</li>
-            <li>Contact</li>
-          </ul>
-          )}
-        <a> 
-          <span> 
+   
+          <Image src={"/icons/menu-icon.png"} width={30} height={30} className={styles.Menu}
+            />
+    
+ 
+      
             <Image src={"/icons/graduation-hat.png"} width={5} height={120} className={styles.gradhat}/> 
-          </span>
-        </a>
+
         <div className={styles.containerindex}> 
         <h1 className={styles.header}>An investment in knowledge pays the best interest.</h1>
 
@@ -57,8 +44,8 @@ export default function Home() {
         </a>
         </div>
 
-        <a href="/about"> 
-          <span> 
+        <a href="/about">
+          <span>
             <img src="/icons/downwardArrow.png"></img>
           </span>
         </a>

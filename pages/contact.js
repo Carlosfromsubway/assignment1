@@ -17,7 +17,12 @@ export default function Contact() {
             <h1 className={styles.header}>Contact Us</h1>
             <p>Want to discuss? Lets chat!</p>
         </div>
-
+        <Image src={"/icons/menu-icon.png"} width={30} height={30} className={styles.Menu}
+            />
+    
+ 
+      
+            <Image src={"/icons/graduation-hat.png"} width={5} height={120} className={styles.gradhat}/> 
             <div className={styles.formcont}>
 
                 <form>
@@ -51,7 +56,7 @@ export default function Contact() {
 
                 </form>
             </div>
-            <a href="/about"> 
+        <a href="/about"> 
           <span> 
             <img src="../icons/upwardArrow.png"></img>
           </span>
