@@ -20,6 +20,15 @@
   margin: 10px;
 }
 
+.contain {
+  display: flex;
+  flex-direction: column;
+}
+
+.Menu {
+  display: flex;
+  margin-left: -1000px;
+}
 .header {
   font-weight: bold;
   font-size: 40px;
@@ -38,6 +47,11 @@
 
 .gradhat {
   width: 200px;
+  margin-left: 1000px;
+}
+
+.downarrow {
+  
 }
 
 .line {

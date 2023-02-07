@@ -41,12 +41,12 @@ export default function About() {
     </ul>
     <a href="/"> 
           <span> 
-            <img></img>
+            <img src="/icons/upwardArrow.png"></img>
           </span>
         </a>
         <a href="/contact"> 
           <span> 
-            <img></img>
+            <img src="/icons/downwardArrow.png"></img>
           </span>
         </a>
     </div>

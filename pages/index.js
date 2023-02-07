@@ -2,8 +2,10 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from '../styles/Home.module.css'
+import { useState } from 'react'
 
 const inter = Inter({ subsets: ['latin'] })
+
 
 export default function Home() {
   return (
@@ -18,12 +20,12 @@ export default function Home() {
       <main className={styles.main}>
       <a> 
           <span> 
-            <img className={styles.gradhat} src="'../public/background-images/backgroundMountain.jpg'"></img>
+          <Image src={"/icons/menu-icon.png"} width={30} height={30} className={styles.Menu}/>
           </span>
         </a>
         <a> 
           <span> 
-            <img className={styles.gradhat} src="'../public/background-images/backgroundMountain.jpg'"></img>
+            <Image src={"/icons/graduation-hat.png"} width={5} height={120} className={styles.gradhat}/> 
           </span>
         </a>
         <div className={styles.containerindex}> 
@@ -34,16 +36,19 @@ export default function Home() {
         <p >Different than a college or university, the British Columbia Institute of Technology offers practical, flexible, applied education with instructors who have direct, hands-on experience in their field.
         </p>
 
-        <a> 
-        <button name="More About Us" className={styles.linkbutton}>More About Us</button>
-        <button name="Contact Us" className={styles.linkbutton}>Contact Us</button>
+        <a href='/about'> 
+        <button name="More About Us" className={styles.linkbutton} href="/about">More About Us</button>
+  
         </a>
 
-
+        <a href='/contact'className={styles.contain}>
+        <button name="Contact Us" className={styles.linkbutton}>Contact Us</button>
+        </a>
         </div>
+
         <a href="/about"> 
           <span> 
-            <img src="downwardArrow.png"></img>
+            <img src="/icons/downwardArrow.png"></img>
           </span>
         </a>
       </main>
